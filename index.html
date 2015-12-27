@@ -48,7 +48,7 @@
   </ul>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" id="welcome">
+  <div class="container green" id="welcome">
     <div class="row">
       <div class="twelve columns" style="margin-top: 25%">
         <h1>Learning Git: 101</h1>
@@ -107,7 +107,7 @@ git config --global user.email 'sd@gmail.com'</pre>
   </div>
   <div class="container" id="add">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 25%">
+      <div class="twelve columns" style="margin-top: 20%">
         <h3>Let's add those files</h3>
         <p>If you have untracked files in your repository. You can easily tell git to track them by running the following command:</p>
         <pre>git add file_name</pre>
@@ -118,7 +118,7 @@ git config --global user.email 'sd@gmail.com'</pre>
   </div>
   <div class="container black" id="commit">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 25%">
+      <div class="twelve columns" style="margin-top: 20%">
         <h3>Now it's time to commit</h3>
         <p>So now that you have told git to track the respective files you can commit those files to git:</p>
         <pre>git commit -m "Commit message"</pre>
@@ -128,12 +128,29 @@ git config --global user.email 'sd@gmail.com'</pre>
   </div>
   <div class="container beige" id="diff">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 25%">
+      <div class="twelve columns" style="margin-top: 20%">
         <h3>Diff</h3>
         <p>So you have changed your files since your last commit and you want to see those changes. Git makes this easy for you. Just type in:</p>
         <pre>git diff</pre>
         <p>If you want to see the changes introduced to a specific file then simply type this (replace file_path with the path to the file):</p>
         <pre>git diff file_path</pre>
+      </div>
+    </div>
+  </div>
+  <div class="container mehroon" id="log">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Where are the logs?</h3>
+        <p>Do you want to see all of the commits which you have made to the repo? Just use this command:</p>
+        <pre>git log</pre>
+        <p>This command prints all of the commits which have been made to the repo. You will use <code>git log</code> a lot in future!</p>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="stash">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Let's stash 'em changes!</h3>
       </div>
     </div>
   </div>
