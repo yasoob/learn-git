@@ -54,7 +54,7 @@
     <div class="row">
       <div class="twelve columns" style="margin-top: 25%;margin-bottom:6%">
         <h1>Learning Git: 101</h1>
-        <h5>Muhammad Yasoob Ullah Khalid</h5>
+        <a class="author" href="#"><h5>Muhammad Yasoob Ullah Khalid</h5></a>
       </div>
     </div>
   </div>
@@ -235,9 +235,77 @@ git config --global user.email 'sd@gmail.com'</pre>
         <p>The above command will create a local copy of the remote repo. You can make changes to it and then after committing those changes to the local repository you can push them to the remote repository.</p>
         <pre>git push origin master</pre>
         <h5>Rebase</h5>
-        <p>This command has a lot of purposes but I will show you the most-used one. Suppose you have made a LOT of similar commits while testing some code and now you want to merge those commits into one. You can do that by doing a <code>git rebase</code>. It is easy. Just type: (replacing n with the amount of last commits you want to merge together.</p>
+        <p>This command has a lot of purposes but I will show you the most-used one. Suppose you have made a LOT of similar commits into a repository while testing some code and now you want to merge those commits into one. You can do that by doing a <code>git rebase</code>. It is easy. Just type: (replacing n with the amount of last commits you want to modify)</p>
         <pre>git rebase -i HEAD~n</pre>
+        <p>This will present you with something of this sort.
+        <pre>
+pick 424ad46 branching
+pick 970c88e checkout, merge
+pick d7c8d36 reset
+pick c1d129c github
+
+# Rebase 5fc27a2..c1d129c onto 5fc27a2
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+        </pre>
+        <p>If you want to squash (merge) these 4 commits into a single commit then you have to change the last three <code>picks</code> to <code>s</code>. It would become something like this:</p>
+        <pre>
+pick 424ad46 branching
+s 970c88e checkout, merge
+s d7c8d36 reset
+s c1d129c github
+
+# Rebase 5fc27a2..c1d129c onto 5fc27a2
+#
+# Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+        </pre>
+        <p>Now you can save the file and you will be presented with a screen where you can create a new commit message.</p>
+        <h5>Force Push</h5>
+        <p>If you want to push a rebased repo online then you have to do something a bit different. You have to do a <code>force</code> push. It can be done like this:</p>
+        <pre>git push origin +master</pre>
+        <p>The + sign tells git to force push the repo. Alternatively you can also do this:</p>
+        <pre>git push -u origin master</pre>
+        <p>And that's it! I hope you enjoyed this short intro to the world of git :)</p>
       </div>
+    </div>
+  </div>
+  <div class="container blue" id="goodbye">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Goodbye!</h3>
+        <p>This tutorial was made for <a href="http://fossasia.org/">FOSSASIA</a>. It is an organization of awesome people. You can check them out if you ever feel like contributing to the world of Open Source.</p>
+      </div>
+    </div>
+    <div class="row fossasia">
+    	<a href="http://fossasia.org/"><img src="http://fossasia.org/img/fossasia-long.png"></a>
     </div>
   </div>
 <!--[if gt IE 8]><!--><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->

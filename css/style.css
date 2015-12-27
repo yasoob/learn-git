@@ -32,6 +32,14 @@
 #welcome{
 	border-bottom: 1px solid silver;
 }
+a.author{
+	color: black;
+	text-decoration: none;
+	transition: all .5s;
+}
+a.author:hover{
+	color: silver;
+}
 #nav {
 	left: 20px;
 	list-style: none;
@@ -118,6 +126,10 @@ h1{
 }
 .downloads li a:hover{
 	color: white;
+}
+.fossasia{
+	text-align: center;
+	margin-top: 3em;
 }
 @media (max-width: 550px) {
 	#nav{
