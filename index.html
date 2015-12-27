@@ -44,6 +44,7 @@
   	<li><a href="#show">Git show</a></li>
   	<li><a href="#branch">Git Branch</a></li>
   	<li><a href="#checkout">Git Checkout</a></li>
+  	<li><a href="#merge">Git merge</a></li>
   	<li><a href="#reset">Git Reset</a></li>
   	<li><a href="#github">GitHub</a></li>
   </ul>
@@ -123,7 +124,7 @@ git config --global user.email 'sd@gmail.com'</pre>
         <h3>Now it's time to commit</h3>
         <p>So now that you have told git to track the respective files you can commit those files to git:</p>
         <pre>git commit -m "Commit message"</pre>
-        <p>You need to replace <code>Commit message</code> with the message you want to assosiate with the respective commit. The commit message should tell you the changes you have introduced in your repo in the respective commit.</p>
+        <p>You need to replace <code>Commit message</code> with the message you want to associate with the respective commit. The commit message should tell you the changes you have introduced in your repo in the respective commit.</p>
       </div>
     </div>
   </div>
@@ -183,7 +184,7 @@ git config --global user.email 'sd@gmail.com'</pre>
       </div>
     </div>
   </div>
-  <div class="container green" id="show">
+  <div class="container green" id="checkout">
     <div class="row">
       <div class="twelve columns" style="margin-top: 20%">
         <h3>Checkout.</h3>
@@ -194,6 +195,17 @@ git config --global user.email 'sd@gmail.com'</pre>
         <pre>git checkout branch_name</pre>
         <p>You can create and move to a new branch in a single command as well.</p>
         <pre>git checkout -b branch_name</pre>
+      </div>
+    </div>
+  </div>
+  <div class="container beige" id="merge">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Merge dem files!</h3>
+        <p>So you have made some changes in a branch and want to move those changes over to the master branch. You can easily do that. Fist you need to move to the master branch</p>
+        <pre>git checkout master</pre>
+        <p>Then you need to type the following command. Replace<code> branch_name</code> with the name of the branch from where you want to pull the changes from.</p>
+        <pre>git merge branch_name</pre>
       </div>
     </div>
   </div>
