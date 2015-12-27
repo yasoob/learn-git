@@ -6,6 +6,17 @@
 	background-color: #06406c;
 	color: white !important;
 }
+.mehroon{
+	background-color: #4c0d09;
+	color: white !important;
+}
+.black{
+	background-color: #000;
+	color: white !important;
+}
+.black pre{
+	background-color: #676464 !important;
+}
 #nav {
 	left: 20px;
 	list-style: none;
@@ -68,6 +79,7 @@ h1{
     color: white;
     padding: 5px 15px;
     font-family: monospace;
+    font-size: 17px;
 }
 .downloads{
 	text-align: center;

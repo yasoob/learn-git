@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Learn-git with Yasoob</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -85,19 +85,55 @@ git config --global user.email 'sd@gmail.com'</pre>
       </div>
     </div>
   </div>
-  <div class="container" id="init">
+  <div class="container beige" id="init">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h3>Learning Git: 101</h3>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="twelve columns" style="margin-top: 25%">
+        <h3>Creating a new repository</h3>
+        <p>In order to setup a new repository in a folder just type in the following command</p>
+        <pre>git init .</pre>
+        <p>This innitializes a new git repository in your current folder and allows you to use other <code>git</code> commands.</p>
       </div>
     </div>
   </div>
-  <div class="container" id="status">
+  <div class="container mehroon" id="status">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h3>Learning Git: 101</h3>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="twelve columns" style="margin-top: 25%">
+        <h3>Checking status</h3>
+        <p>You can check the status of your repository by typing the following command:</p>
+        <pre>git status</pre>
+        <p>This command shows you some helpful information about your repository. It tells you about which files are being tracked by git and which are not.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="add">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 25%">
+        <h3>Let's add those files</h3>
+        <p>If you have untracked files in your repository. You can easily tell git to track them by running the following command:</p>
+        <pre>git add file_name</pre>
+        <p>Just replace <code>file__name</code> with the name of the file you want git to track. If you want git to track all the files in the current repository then type:</p>
+        <pre>git add .</pre>
+      </div>
+    </div>
+  </div>
+  <div class="container black" id="commit">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 25%">
+        <h3>Now it's time to commit</h3>
+        <p>So now that you have told git to track the respective files you can commit those files to git:</p>
+        <pre>git commit -m "Commit message"</pre>
+        <p>You need to replace <code>Commit message</code> with the message you want to assosiate with the respective commit. The commit message should tell you the changes you have introduced in your repo in the respective commit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container beige" id="diff">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 25%">
+        <h3>Diff</h3>
+        <p>So you have changed your files since your last commit and you want to see those changes. Git makes this easy for you. Just type in:</p>
+        <pre>git diff</pre>
+        <p>If you want to see the changes introduced to a specific file then simply type this (replace file_path with the path to the file):</p>
+        <pre>git diff file_path</pre>
       </div>
     </div>
   </div>
