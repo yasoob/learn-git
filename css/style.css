@@ -131,7 +131,7 @@ h1{
 	text-align: center;
 	margin-top: 3em;
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
 	#nav{
 		position: relative;
 	}
