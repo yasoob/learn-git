@@ -1,78 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>jQuery One Page Nav</title>
-	<link href="demo.css" rel="stylesheet" media="all">
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
-
 <body>
-	<ul id="nav">
-		<li class="current"><a href="#intro">Intro</a></li>
-		<li><a href="#usage">Usage</a></li>
-		<li><a href="#options">Options</a></li>
-		<li><a href="#examples">Examples</a></li>
-	</ul>
 
-	<div id="container">
-		<div class="section" id="intro">
-			<h1>jQuery One Page Nav</h1>
-
-			<p>A lightweight jQuery plugin for the navigation on one-page sites. Adds smooth scrolling when clicking on the navigation and automatically selects the correct navigation items as you are scrolling through the different sections.</p>
-
-			<p><a href="https://github.com/davist11/jQuery-One-Page-Nav">GitHub Repo</a></p>
-		</div>
-
-		<div class="section" id="usage">
-			<h2>Usage</h2>
-
-			<pre>$(document).ready(function() {
-	$('#nav').onePageNav();
-});</pre>
-
-			<h3>Markup</h3>
-
-			<pre>&lt;ul id="nav">
-	&lt;li class="current">&lt;a href="#intro">Intro&lt;/a>&lt;/li>
-	&lt;li>&lt;a href="#usage">Usage&lt;/a>&lt;/li>
-	&lt;li>&lt;a href="#examples">Examples&lt;/a>&lt;/li>
-&lt;/ul></pre>
-		</div>
-
-		<div class="section" id="options">
-			<h2>Options</h2>
-
-			<ul>
-				<li><strong>currentClass</strong>: Class to add to the nav to indicate the current item. Defaults to <em>current</em>.</li>
-				<li><strong>changeHash</strong>: Whether you want to change the hash when a user clicks on the nav. Defaults to <em>false</em>.</li>
-				<li><strong>scrollSpeed</strong>: Speed at which the page will scroll upon clicking on the nav. Defaults to <em>750</em>.</li>
-				<li><strong>scrollThreshold</strong>: Percentage of screen at which the next section should become current. Defaults to <em>0.5</em>.</li>
-				<li><strong>filter</strong>: Selector of links to filter out of one page nav functionality.</li>
-				<li><strong>easing</strong>: Easing method. Defaults to <em>swing</em>.</li>
-				<li><strong>begin</strong>: Function to call when the scrolling starts.</li>
-				<li><strong>end</strong>: Function to call when the scrolling ends.</li>
-				<li><strong>scrollChange</strong>: Function to call when you enter a section. The current nav item gets passed in.</li>
-			</ul>
-		</div>
-
-		<div class="section" id="examples">
-			<h2>Examples</h2>
-
-			<ul>
-				<li><a href="filter.html">Filter out links</a></li>
-				<li><a href="hash.html">Change hash</a></li>
-				<li><a href="top.html">Horizontal Nav</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
-	<!--[if gt IE 8]><!--><script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
+  <ul id="nav">
+  	<li class="current"><a href="#welcome">Welcome</a></li>
+  	<li><a href="#intro">Introduction</a></li>
+  	<li><a href="#install">Installation</a></li>
+  	<li><a href="#init">Git Init</a></li>
+  	<li><a href="#status">Git Status</a></li>
+  	<li><a href="#add">Git Add</a></li>
+  	<li><a href="#commit">Git Commit</a></li>
+  	<li><a href="#diff">Git Diff</a></li>
+  	<li><a href="#log">Git Log</a></li>
+  	<li><a href="#stash">Git Stash</a></li>
+  	<li><a href="#checkout">Git Checkout</a></li>
+  	<li><a href="#reset">Git Reset</a></li>
+  	<li><a href="#branch">Git Branch</a></li>
+  	<li><a href="#github">GitHub</a></li>
+  </ul>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" id="welcome">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 25%">
+        <h1>Learning Git: 101</h1>
+        <h5>Muhammad Yasoob Ullah Khalid</h5>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="intro">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 25%">
+        <h3>Introduction</h3>
+        <p>Git is a version control system. It allows you to manage your projects. You can freely edit the code of your projects without ever worrying about loosing anything!</p>
+        <br>
+        <p>In this tutorial you will learn about the basics of git. I will take you from installing git to merging two branches. Please bear with me. I am pretty sure that you will enjoy git after you get a hang of it!</p>
+      </div>
+    </div>
+  </div>
+  <div class="container blue" id="install">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Installation</h3>
+        <p>Installation is very easy. Just type the following command on Ubuntu</p>
+        <pre>sudo apt-get install git</pre>
+        <h5>Setup Global Variables</h5>
+        <p>Git needs some innitial information before we can start working with it. You can supply this information
+        with the commands written below. We use <code>--global</code> so that we don't have to input these commands evertime we innitialize a new git repository.</p>
+        <pre>git config --global user.name 'Shaumik'
+git config --global user.email 'sd@gmail.com'</pre>
+		<ul class="downloads">
+			<li><a href="http://msysgit.github.io/">Windows</a></li>
+			<li><a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Linux</a></li>
+			<li><a href="http://code.google.com/p/git-osx-installer/downloads/list?can=3">OSX</a></li>
+		</ul>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="init">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h3>Learning Git: 101</h3>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="status">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h3>Learning Git: 101</h3>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div>
+<!--[if gt IE 8]><!--><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
 	<script src="jquery.nav.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('#nav').onePageNav();
 		});
 	</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

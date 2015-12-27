@@ -1,0 +1,99 @@
+/* Colors */
+.beige{
+	background-color: beige;
+}
+.blue{
+	background-color: #06406c;
+	color: white !important;
+}
+#nav {
+	left: 20px;
+	list-style: none;
+	margin: 0;
+	position: fixed;
+	top: 20px;
+	z-index: 1;
+}
+
+#nav li {
+	margin-bottom: 2px;
+}
+
+#nav a {
+	background: #ededed;
+	color: #666;
+	display: block;
+	font-size: 14px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#nav a:hover {
+	background: #dedede;
+}
+
+#nav .current a {
+	background: #666;
+	color: #ededed;
+}
+#welcome{
+	text-align: center; 
+}
+h1{
+	font-family: 'Sigmar One', cursive;
+}
+.container{
+	width: 100%;
+	max-width: 100%;
+	padding-left:25%;
+	padding-right:25%;
+	padding-bottom:18%;
+	padding-top:5%;
+}
+.container h3{
+	text-align: center;
+	font-weight: bold;
+}
+.container h5{
+	font-weight: bold;
+}
+.container p{
+	font-size: 19px;
+}
+.container pre{
+	background-color: #000;
+    font-style: normal;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 15px;
+    font-family: monospace;
+}
+.downloads{
+	text-align: center;
+	margin-top: 5em;
+}
+.downloads li{
+	display: inline-block;
+	padding: 20px;
+	background-color: #1164A2;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.downloads li:last-child{
+	margin-right: 0px;
+}
+.downloads li a{
+	color: #E2DCDC;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all .5s;
+}
+.downloads li a:hover{
+	color: white;
+}
+@media (max-width: 550px) {
+	#nav{
+		position: relative;
+	}
+}
