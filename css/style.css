@@ -131,6 +131,10 @@ h1{
 	text-align: center;
 	margin-top: 3em;
 }
+#goodbye{
+	padding-top: 0%;
+    padding-bottom: 8%;
+}
 @media (max-width: 600px) {
 	#nav{
 		position: relative;
