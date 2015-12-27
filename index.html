@@ -42,9 +42,9 @@
   	<li><a href="#log">Git Log</a></li>
   	<li><a href="#stash">Git Stash</a></li>
   	<li><a href="#show">Git show</a></li>
+  	<li><a href="#branch">Git Branch</a></li>
   	<li><a href="#checkout">Git Checkout</a></li>
   	<li><a href="#reset">Git Reset</a></li>
-  	<li><a href="#branch">Git Branch</a></li>
   	<li><a href="#github">GitHub</a></li>
   </ul>
   <!-- Primary Page Layout
@@ -169,6 +169,31 @@ git config --global user.email 'sd@gmail.com'</pre>
         <p>If you want to see the changes done in <code>n</code> commit (n is the number of commits before head) then simply type this (replace n with a number):</p>
         <pre>git show HEAD~n</pre>
         <p><b>Note:</b> HEAD is a reference to your latest commit</p>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="branch">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Branches. Branches everywhere.</h3>
+        <p>So you want to make a LOT of changes to your project but don't want to modify your current working project. You have a solution and it is called branching. Currently we have been working in the main branch (<code>master</code> branch). You can create a branch in your repo and modify the code in that branch. If you are satisfied with your changes and they work perfectly you can merge that branch into your <code>master</code> branch. Otherwise you can simply delete the new branch and start over again.</p>
+        <p>You can create a new branch by typing this command:</p>
+        <pre>git branch branch_name</pre>
+        <p><b>Note: </b>You are not automatically shifted to the new branch. I will share that command and the merge command in the next section.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container green" id="show">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Checkout.</h3>
+        <p>This <code>checkout</code> command has a lot of usecases. We will take a look at them one-by-one.</p>
+        <p>You have made a lot of changes to a file and now you are regretting it. You want to change it back to the way it was after your last commit. What do you do? You checkout! (replace <code>file_name</code> with the path to the file)</p>
+        <pre>git checkout HEAD file_name</pre>
+        <p>This <code>checkout</code> command to move to another branch. After you have created your branch following the code from the section above, you can move to that branch by typing the following command:</p>
+        <pre>git checkout branch_name</pre>
+        <p>You can create and move to a new branch in a single command as well.</p>
+        <pre>git checkout -b branch_name</pre>
       </div>
     </div>
   </div>
