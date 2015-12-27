@@ -25,6 +25,10 @@
 .black pre{
 	background-color: #676464 !important;
 }
+.light-blue{
+	background-color: #348fd4;
+	color: white !important;
+}
 #welcome{
 	border-bottom: 1px solid silver;
 }
