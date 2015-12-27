@@ -222,6 +222,24 @@ git config --global user.email 'sd@gmail.com'</pre>
       </div>
     </div>
   </div>
+  <div class="container" id="github">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>GitHub</h3>
+        <p>This is the website which is dedicated to git and social coding. I am going to share some commands involving github with you.</p>
+        <h5>Fork</h5>
+        <p>You can fork another repository of GitHub by going to a repository page and clicking on fork at the top. This will create a copy of that project under your GitHub account.</p>
+        <h5>Cloning</h5>
+        <p>You can then create a local copy of the remote repo by typing th following command: (You can find your clone url by opening your repo on GitHub and looking at top-right corner)</p>
+        <pre>git clone git@github.com:yasoob/learn-git.git</pre>
+        <p>The above command will create a local copy of the remote repo. You can make changes to it and then after committing those changes to the local repository you can push them to the remote repository.</p>
+        <pre>git push origin master</pre>
+        <h5>Rebase</h5>
+        <p>This command has a lot of purposes but I will show you the most-used one. Suppose you have made a LOT of similar commits while testing some code and now you want to merge those commits into one. You can do that by doing a <code>git rebase</code>. It is easy. Just type: (replacing n with the amount of last commits you want to merge together.</p>
+        <pre>git rebase -i HEAD~n</pre>
+      </div>
+    </div>
+  </div>
 <!--[if gt IE 8]><!--><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script><!--<![endif]-->
 	<script src="jquery.nav.js"></script>
 	<script>
