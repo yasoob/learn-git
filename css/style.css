@@ -14,12 +14,19 @@
 	background-color: #4c0d09;
 	color: white !important;
 }
+.reddish{
+	background-color: #B31409;
+	color: white !important;
+}
 .black{
 	background-color: #000;
 	color: white !important;
 }
 .black pre{
 	background-color: #676464 !important;
+}
+#welcome{
+	border-bottom: 1px solid silver;
 }
 #nav {
 	left: 20px;

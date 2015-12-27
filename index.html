@@ -41,6 +41,7 @@
   	<li><a href="#diff">Git Diff</a></li>
   	<li><a href="#log">Git Log</a></li>
   	<li><a href="#stash">Git Stash</a></li>
+  	<li><a href="#show">Git show</a></li>
   	<li><a href="#checkout">Git Checkout</a></li>
   	<li><a href="#reset">Git Reset</a></li>
   	<li><a href="#branch">Git Branch</a></li>
@@ -48,9 +49,9 @@
   </ul>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container green" id="welcome">
+  <div class="container" id="welcome">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 25%">
+      <div class="twelve columns" style="margin-top: 25%;margin-bottom:6%">
         <h1>Learning Git: 101</h1>
         <h5>Muhammad Yasoob Ullah Khalid</h5>
       </div>
@@ -137,7 +138,7 @@ git config --global user.email 'sd@gmail.com'</pre>
       </div>
     </div>
   </div>
-  <div class="container mehroon" id="log">
+  <div class="container reddish" id="log">
     <div class="row">
       <div class="twelve columns" style="margin-top: 20%">
         <h3>Where are the logs?</h3>
@@ -151,6 +152,23 @@ git config --global user.email 'sd@gmail.com'</pre>
     <div class="row">
       <div class="twelve columns" style="margin-top: 20%">
         <h3>Let's stash 'em changes!</h3>
+        <p>You have made some changes to the repo and want to save those changes. However you are not yet ready to make a full commit. What would you do? You would stash those changes!</p>
+        <pre>git stash</pre>
+        <p>Git records the changes you have made and saves them for later. Once you are ready to apply those changes just type the following command:</p>
+        <pre>git stash apply</pre>
+        <p>This command comes in use while moving from one branch to another. You will learn about branching later.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container blue" id="show">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h3>Let me show!</h3>
+        <p>So you want to see the exact changes which you made in your previous commit. It's easy:</p>
+        <pre>git show HEAD</pre>
+        <p>If you want to see the changes done in <code>n</code> commit (n is the number of commits before head) then simply type this (replace n with a number):</p>
+        <pre>git show HEAD~n</pre>
+        <p><b>Note:</b> HEAD is a reference to your latest commit</p>
       </div>
     </div>
   </div>
