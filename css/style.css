@@ -41,7 +41,7 @@ a.author:hover{
 	color: silver;
 }
 #nav {
-	left: 20px;
+	left: 0px;
 	list-style: none;
 	margin: 0;
 	position: fixed;
@@ -131,6 +131,9 @@ h1{
 	text-align: center;
 	margin-top: 3em;
 }
+.fossasia img{
+	width: 100%;
+}
 #goodbye{
 	padding-top: 0%;
     padding-bottom: 8%;
@@ -138,5 +141,9 @@ h1{
 @media (max-width: 600px) {
 	#nav{
 		position: relative;
+	}
+	.container {
+	    padding-left: 5%;
+	    padding-right: 5%;
 	}
 }
