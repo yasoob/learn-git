@@ -110,7 +110,7 @@ h1{
 }
 .downloads li{
 	display: inline-block;
-	padding: 20px;
+	/* padding: 20px; */
 	background-color: #1164A2;
 	border-radius: 5px;
 	margin-right: 10px;
@@ -123,6 +123,8 @@ h1{
 	text-decoration: none;
 	font-weight: bold;
 	transition: all .5s;
+	padding: 20px;
+	display: inherit;
 }
 .downloads li a:hover{
 	color: white;
