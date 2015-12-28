@@ -107,11 +107,12 @@ h1{
 .downloads{
 	text-align: center;
 	margin-top: 5em;
+	/* background-color: #1164A2; */
 }
 .downloads li{
 	display: inline-block;
 	/* padding: 20px; */
-	background-color: #1164A2;
+	/* background-color: #1164A2; */
 	border-radius: 5px;
 	margin-right: 10px;
 }
@@ -125,9 +126,12 @@ h1{
 	transition: all .5s;
 	padding: 20px;
 	display: inherit;
+	background-color: #1164A2;
+	border-radius: 5px;
 }
 .downloads li a:hover{
 	color: white;
+	background-color: #4F98CE;
 }
 .fossasia{
 	text-align: center;
