@@ -132,7 +132,7 @@ h1{
 	margin-top: 3em;
 }
 .fossasia img{
-	width: 100%;
+	width: 300px;
 }
 #goodbye{
 	padding-top: 0%;
@@ -145,5 +145,8 @@ h1{
 	.container {
 	    padding-left: 5%;
 	    padding-right: 5%;
+	}
+	.fossasia img{
+		width: 100%;
 	}
 }
