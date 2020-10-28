@@ -45,6 +45,7 @@
   	<li><a href="#branch">Git Branch</a></li>
   	<li><a href="#checkout">Git Checkout</a></li>
   	<li><a href="#merge">Git merge</a></li>
+  	<li><a href="#rebase">Git rebase</a></li>
   	<li><a href="#reset">Git Reset</a></li>
     <li><a href="#github">GitHub</a></li>
   	<li><a href="#goodbye">Goodbye!</a></li>
@@ -207,6 +208,19 @@ git config --global user.email 'sd@gmail.com'</pre>
         <pre>git checkout master</pre>
         <p>Then you need to type the following command. Replace<code> branch_name</code> with the name of the branch from where you want to pull the changes from.</p>
         <pre>git merge branch_name</pre>
+      </div>
+    </div>
+  </div>
+  <div class="container mehroon" id="rebase">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 10%">
+        <h3>Rebase your Work!</h3>
+        <p>When working in a team, you would need to apply your changes on top of others work. This process is called Rebase, where you apply your commits on top of others work/branch <code>branch_name</code>:</p>
+        <pre>git rebase branch_name</pre>
+        <p>Usually in branch based approach, each feature/individual develops in different branch, diverging from a parent branch, say <code>master</code>. You would need to stay up to date with respect to parent branch <code>master</code> and apply your commits on top of it. This can be done in a single command as:</p>
+        <pre>git pull origin master --rebase</pre>
+        <p>Start an interactive rebase, which allows the commits to be reordered, omitted, combined or modified:</p>
+        <pre>git rebase -i target_base_branch_or_commit_hash</pre>
       </div>
     </div>
   </div>
