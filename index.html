@@ -216,7 +216,7 @@ git config --global user.email 'sd@gmail.com'</pre>
         <h3>Reset</h3>
         <p>Git reset is similar to when you checkout a file using the <code>checkout</code> command. The only difference is that when you reset a file, git removes that file from staging area but keep the changes in the working directory.</p>
         <pre>git reset HEAD file_name</pre>
-        <p>The above command resets the file in the staging area to the way it was after your last commit. However you do not loose your edits. They are present in your directory but just not staged for the next commit.</p>
+        <p>The above command resets the file in the staging area to the way it was after your last commit. However you do not lose your edits. They are present in your directory but just not staged for the next commit.</p>
         <p>You can also reset your project to a previous state using <code>reset</code>. First of all you need to find the SHA value of the commit till which you want to reset your project. You can easily find it using the <code>git log</code> command. After that you can type in the following command:</p>
         <pre>git reset 970c88e</pre>
         <p><b>Note:</b> You only need the first 7 characters of the SHA</p>
